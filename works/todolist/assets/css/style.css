@@ -2042,7 +2042,7 @@ input[type="button"].btn-block {
     padding: 1.5rem .5rem;
     font-size: inherit;
     font-family: inherit;
-    width: 150px;
+    width: 200px;
     min-width: 100px;
 }
 
@@ -2058,6 +2058,7 @@ input[type="button"].btn-block {
 
 @media (max-width: 767.98px) {
     .btn {
+        width: 150px;
         padding: 1.1rem .3rem;
     }
 }
@@ -2291,6 +2292,10 @@ input[type="button"].btn-block {
     color: #fff;
 }
 
+.modal-content {
+    border: none;
+}
+
 .modal-title {
     margin: 0 auto;
     font-size: 3rem;
@@ -2309,15 +2314,43 @@ input[type="button"].btn-block {
 
 .modal-body__item {
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
 }
 
 .modal-body__item + .modal-body__item {
     margin-top: 1.5rem;
 }
 
-.modal-body__item p {
+.modal-body__item-btn {
     display: inline-block;
+    margin-left: .5rem;
+    position: relative;
+    top: 2px;
+    width: 14px;
+    height: 14px;
+}
+
+.modal-body__item-btn--quare {
+    padding: 0.3rem;
+    border: 1px solid #adb5bd;
+    border-radius: .3rem;
+}
+
+.modal-body__item-icon {
+    display: inline-block;
+    padding: 0.3rem;
+    border: 1px solid #fff;
+    border-radius: .3rem;
+}
+
+.modal-body__item-icon--save {
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.modal-body__item-icon--clear {
+    border-color: #dc3545;
+    color: #dc3545;
 }
 
 .modal-footer {
