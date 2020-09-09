@@ -44,7 +44,7 @@
 
         <div class="list__item">
             <input class="list__input" type="text" name="Input area" placeholder="Добавить дело">
-            <button class="list__btn btn"></button>
+            <button class="list__btn button"></button>
         </div>
 
         <div class="todo">
@@ -73,19 +73,23 @@
   
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Полезная информация</h5>
-            </div>
-            <ul class="modal-body">
-                <li class="modal-body__item">Для добавления списка дел напишите текст в поле ввода и нажмите "Enter" или кнопку "+"</li>
-                <li class="modal-body__item">Нажмите "Сохранить", чтобы сохранить список дел на потом</li>
-                <li class="modal-body__item">Чтобы удалить один пункт нажмите на значок корзины</li>
-                <li class="modal-body__item">Чтобы удалить все списки дел, нажмите "Очистить"</li>
-            </ul>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary modal__btn" data-dismiss="modal">Close</button>
+    <div class="container">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Полезная информация</h5>
+                </div>
+                <ul class="modal-body">
+                    <li class="modal-body__item">Для добавления списка дел напишите текст в поле ввода и нажмите "Enter" или кнопку "+"</li>
+                    <li class="modal-body__item">Чтобы отметить важным один пункт нажмите на значок пламени</li>
+                    <li class="modal-body__item">Чтобы отметить выполненным один пункт нажмите на пустой квадрат</li>
+                    <li class="modal-body__item">Чтобы удалить один пункт нажмите на значок корзины</li>
+                    <li class="modal-body__item">Нажмите "Сохранить", чтобы сохранить список дел на потом</li>
+                    <li class="modal-body__item">Чтобы удалить все списки дел, нажмите "Очистить"</li>
+                </ul>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary modal__btn" data-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>

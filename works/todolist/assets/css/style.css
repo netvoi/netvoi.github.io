@@ -24,6 +24,12 @@ ul, li, p {
     list-style: none;
 }
 
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
 /* Bootstrap */
 .container,
 .container-fluid,
@@ -2029,22 +2035,36 @@ input[type="button"].btn-block {
     display: inline-block;
     border: none;
     background: none;
+    cursor: pointer;
 }
 
 .btn {
     padding: 1.5rem .5rem;
     font-size: inherit;
     font-family: inherit;
-    width: 200px;
+    width: 150px;
+    min-width: 100px;
 }
 
 .btn + .btn {
     margin-left: 1rem;
 }
 
+@media (max-width: 991.98px) {
+    .btn {
+        padding: 1.3rem .4rem;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .btn {
+        padding: 1.1rem .3rem;
+    }
+}
+
 @media (max-width: 575.98px) {
     .btn {
-        width: 100px;
+        padding: .9rem .3rem;
     }
 }
 
@@ -2055,14 +2075,13 @@ input[type="button"].btn-block {
 .list__item {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .list__input {
     display: inline-block;
     margin: 0;
     padding: 2rem 1rem;
-    flex-basis: 95%;
+    flex-basis: 90%;
     background-color: #f8f9fa;
     border: 1px solid transparent;
     border-radius: .8rem;
@@ -2077,20 +2096,24 @@ input[type="button"].btn-block {
 
 @media (max-width: 575.98px) {
     .list__input {
-        flex-basis: 80%;
+        flex-basis: 88%;
     }
 }
 
 .list__btn {
+    margin-left: auto;
     width: 30px;
     height: 30px;
     background: #fff url("../img/add.svg") no-repeat center;
     transition: transform .2s linear;
 }
 
-.list__btn:focus, .list__btn:hover {
-    outline: none;
+.list__btn:hover {
     transform: scale(1.1) rotate(90deg);
+}
+
+.list__btn:focus {
+    outline: none;
 }
 
 .list__buttons {
@@ -2103,10 +2126,13 @@ input[type="button"].btn-block {
     padding: 1rem 0;
 }
 
+.todo__list {
+    width: 100%;
+}
+
 .todo__list-item {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .todo__list-item + .todo__list-item {
@@ -2119,18 +2145,15 @@ input[type="button"].btn-block {
     border: 1px solid #007bff;
     border-radius: 0.8rem;
     color: #000;
-}
-
-@media (max-width: 575.98px) {
-    .todo__list-text {
-        flex-basis: 85%;
-    }
+  /* @include media-breakpoint-down(sm) {
+        flex-basis: 75%;
+    } */
 }
 
 .todo__buttons {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    margin-left: auto;
 }
 
 .todo__btn {
@@ -2143,9 +2166,12 @@ input[type="button"].btn-block {
     transition: transform .2s linear;
 }
 
-.todo__btn:focus, .todo__btn:hover {
+.todo__btn:hover {
+    transform: translateY(-0.3rem);
+}
+
+.todo__btn:focus {
     outline: none;
-    transform: scale(1.1);
 }
 
 .todo__buttons-item {
@@ -2179,9 +2205,8 @@ input[type="button"].btn-block {
 }
 
 .todo__check--important:not(:disabled):not(:checked) + label:hover::before,
-  .todo__check--important:focus + label::before,
-  .todo__check--important:focus:not(:checked) + label::before {
-    transform: scale(1.1);
+  .todo__check--important:not(:disabled):checked + label:hover::before {
+    transform: translateY(-0.3rem);
 }
 
 .todo__check--important:disabled + label::before {
@@ -2261,9 +2286,21 @@ input[type="button"].btn-block {
     justify-content: space-around;
 }
 
+.modal-header {
+    background-color: #17a2b8;
+    color: #fff;
+}
+
 .modal-title {
+    margin: 0 auto;
     font-size: 3rem;
     font-weight: 700;
+}
+
+@media (max-width: 575.98px) {
+    .modal-title {
+        font-size: 2rem;
+    }
 }
 
 .modal-body {
