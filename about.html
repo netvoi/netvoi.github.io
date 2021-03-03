@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <title>Junior Web Developer</title>
+</head>
+<body>
+
+<div class="page semiopacity">
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="user">
+            <div class="user__photo">
+              <picture>
+                <source srcset="assets/img/user-photo.webp" type="image/webp" />
+                <img
+                  src="assets/img/user-photo.png"
+                  alt="user-photo"
+                  width="60"
+                  height="60"
+                />
+              </picture>
+            </div>
+            <div class="user__content">
+              <div class="user__name">
+                <a href="/">Белялов Марсель</a>
+              </div>
+              <div class="user__position">Frontend Developer</div>
+            </div>
+          </div>
+    
+          <nav class="nav">
+            <a class="nav__link" href="/about.html">обо мне</a>
+            <a class="nav__link" href="/works.html">мои работы</a>
+            <a class="nav__link" href="/contact.html">контакты</a>
+          </nav>
+    
+          <button class="hamburger" type="button" id="navToggle">
+            <span class="hamburger__icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main page -->
+    
+    <!-- About -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="about__header">
+          <h2 class="about__title title">обо мне</h2>
+        </div>
+        <div class="about__inner">
+          <div class="about__content">
+            <p class="about__text">
+              Привет, меня зовут Марсель. Я фронтенд разработчик. Выбрал данное направление, так как считаю, что создавать визуальную и интерактивную составляющую сайта или приложения очень интересно.
+            </p>
+            <p class="about__text">
+              Моя цель это изучение Javascript на профессиональном уровне. Сейчас я изучаю фрэймворк Vue.js. Это довольно сильный инструмент для создания, как и простых, так и сложных SPA приложений. 
+            </p>
+            <p class="about__text">
+              Я влюблен в этот мир разработки и готов трудиться по 25 часов в сутки, изучать новые технологии, слушать и впитывать информацию от более опытных разработчиков. Да, на данный момент в моём запасе мало опыта, НО через это проходит каждый и лишь через упорный труд и веру  в свою цель можно добиться успеха в своём деле.
+            </p>
+          </div>
+          <div class="about__photo">
+            <picture>
+              <source srcset="assets/img/about-photo.webp" type="image/webp" />
+              <img
+                class="about__photo-user"
+                src="assets/img/about-photo.jpg"
+                alt=""
+                width="380"
+                height="500"
+              />
+            </picture>
+          </div>
+        </div>
+        <!-- /.about__inner -->
+        <div class="text-center">
+          <a class="btn" href="#" data-modal-skills="#skills">мои навыки</a>
+        </div>
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.about -->
+    
+    <div class="modal" id="skills">
+      <div class="modal__wrapper">
+        <a class="modal__close" href="#">
+          <img src="assets/img/modal/close.svg" alt="close-icon" />
+        </a>
+    
+        <h2 class="modal__title text-center">Мои навыки</h2>
+        <div class="modal__inner">
+          <div class="resume">
+            <div class="resume__inner">
+              <h4 class="resume__title">Профессиональные навыки</h4>
+              <ul class="resume__list">
+                <li class="resume__list-item">
+                  <h5 class="resume__subtitle">Frontend:</h5>
+                  <ul class="resume__skills">
+                    <li class="resume__skills-item">JavaScript (ES6+)</li>
+                    <li class="resume__skills-item">VueJS 2.v</li>
+                    <li class="resume__skills-item">Vuex, Vue Router</li>
+                    <li class="resume__skills-item">Webpack / Gulp</li>
+                    <li class="resume__skills-item">HTML</li>
+                    <li class="resume__skills-item">CSS / SCSS / LESS</li>
+                    <li class="resume__skills-item">Bootstrap 4</li>
+                  </ul>
+                </li>
+    
+                <li class="resume__list-item">
+                  <h5 class="resume__subtitle">Backend:</h5>
+                  <ul class="resume__skills">
+                    <li class="resume__skills-item">Node.JS / Express / JWT</li>
+                    <li class="resume__skills-item">STOMP.js / Socket.io</li>
+                  </ul>
+                </li>
+    
+                <li class="resume__list-item">
+                  <h5 class="resume__subtitle">Другие скиллы:</h5>
+                  <ul class="resume__skills">
+                    <li class="resume__skills-item">Git / GitHub</li>
+                    <li class="resume__skills-item">BEM (CSS)</li>
+                    <li class="resume__skills-item">PostgreSQL</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- /.resume -->
+    
+          <div class="skills">
+            <div class="skills__block">
+              <h4 class="skills__main-title">Основные технологии</h4>
+              <div class="skills__item">
+                <div class="skills__img">
+                  <img
+                    class="skills__item-icon"
+                    src="assets/img/logos/html-logo.svg"
+                    alt="html-icon"
+                  />
+                </div>
+                <div class="skills__load-bar">
+                  <div class="skills__load-bar-progress" style="width: 80%"></div>
+                </div>
+              </div>
+              <div class="skills__item">
+                <div class="skills__img">
+                  <img
+                    class="skills__item-icon"
+                    src="assets/img/logos/css-logo.svg"
+                    alt="css-icon"
+                  />
+                </div>
+                <div class="skills__load-bar">
+                  <div class="skills__load-bar-progress" style="width: 70%"></div>
+                </div>
+              </div>
+              <div class="skills__item">
+                <div class="skills__img">
+                  <img
+                    class="skills__item-icon"
+                    src="assets/img/logos/js-logo.svg"
+                    alt="Javascript-icon"
+                  />
+                </div>
+                <div class="skills__load-bar">
+                  <div class="skills__load-bar-progress" style="width: 60%"></div>
+                </div>
+              </div>
+              <div class="skills__item">
+                <div class="skills__img">
+                  <img
+                    class="skills__item-icon"
+                    src="assets/img/logos/nodejs-logo.svg"
+                    alt="node.js-icon"
+                  />
+                </div>
+                <div class="skills__load-bar">
+                  <div class="skills__load-bar-progress" style="width: 30%"></div>
+                </div>
+              </div>
+            </div>
+            <!-- /.skills__main -->
+            <div class="skills__block">
+              <h4 class="skills__main-title">
+                Препроцессоры
+              </h4>
+              <div class="skills__item">
+                <div class="skills__img">
+                  <img
+                    class="skills__item-icon"
+                    src="assets/img/logos/less-logo.svg"
+                    alt="less-icon"
+                  />
+                </div>
+                <div class="skills__load-bar">
+                  <div class="skills__load-bar-progress" style="width: 35%"></div>
+                </div>
+              </div>
+              <div class="skills__item">
+                <div class="skills__img">
+                  <img
+                    class="skills__item-icon"
+                    src="assets/img/logos/sass-logo.svg"
+                    alt="scss-icon"
+                  />
+                </div>
+                <div class="skills__load-bar">
+                  <div class="skills__load-bar-progress" style="width: 60%"></div>
+                </div>
+              </div>
+            </div>
+            <!-- /.skills__preprocessor -->
+            <div class="skills__block">
+              <h4 class="skills__main-title">Cборщики модулей JavaScript</h4>
+              <div class="skills__item">
+                <div class="skills__img">
+                  <img
+                    class="skills__item-icon"
+                    src="assets/img/logos/gulp-logo.svg"
+                    alt="gulp-icon"
+                  />
+                </div>
+                <div class="skills__load-bar">
+                  <div class="skills__load-bar-progress" style="width: 35%"></div>
+                </div>
+              </div>
+    
+              <div class="skills__item">
+                <div class="skills__img">
+                  <img
+                    class="skills__item-icon"
+                    src="assets/img/logos/webpack-logo.svg"
+                    alt="webpack-icon"
+                  />
+                </div>
+                <div class="skills__load-bar">
+                  <div class="skills__load-bar-progress" style="width: 40%"></div>
+                </div>
+              </div>
+            </div>
+            <!-- /.skills__techical -->
+            <div class="skills__block">
+              <h4 class="skills__main-title">Фреймворки</h4>
+              <div class="skills__item">
+                <div class="skills__img">
+                  <img
+                    class="skills__item-icon"
+                    src="assets/img/logos/vue-logo.svg"
+                    alt="vue.js-icon"
+                  />
+                </div>
+                <div class="skills__load-bar">
+                  <div class="skills__load-bar-progress" style="width: 55%"></div>
+                </div>
+              </div>
+            </div>
+            <!-- /.scills__frameworks -->
+          </div>
+          <!-- /.skills -->
+        </div>
+        <!-- /.modal__inner -->
+      </div>
+      <!-- /.modal__wrapper -->
+    </div>
+    <!-- /.modal -->
+    
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__social">
+            <a class="footer__link" href="https://vk.com/mars_99" target="_blank">
+              <img class="footer__icon" src="assets/img/social/vk.svg" alt="vk-icon" />
+            </a>
+            <a
+              class="footer__link"
+              href="https://t.me/l1ttlesparrow"
+              target="_blank"
+            >
+              <img
+                class="footer__icon"
+                src="assets/img/social/telegram.svg"
+                alt="telegram-icon"
+              />
+            </a>
+            <a
+              class="footer__link"
+              href="https://www.instagram.com/littlesparrow____/"
+              target="_blank"
+            >
+              <img
+                class="footer__icon"
+                src="assets/img/social/instagram.svg"
+                alt="instagram-icon"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+</div>
+
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>

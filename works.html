@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicons/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    
+    <title>Junior Web Developer</title>
+</head>
+<body>
+
+<div class="page semiopacity">
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <div class="user">
+            <div class="user__photo">
+              <picture>
+                <source srcset="assets/img/user-photo.webp" type="image/webp" />
+                <img
+                  src="assets/img/user-photo.png"
+                  alt="user-photo"
+                  width="60"
+                  height="60"
+                />
+              </picture>
+            </div>
+            <div class="user__content">
+              <div class="user__name">
+                <a href="/">Белялов Марсель</a>
+              </div>
+              <div class="user__position">Frontend Developer</div>
+            </div>
+          </div>
+    
+          <nav class="nav">
+            <a class="nav__link" href="/about.html">обо мне</a>
+            <a class="nav__link" href="/works.html">мои работы</a>
+            <a class="nav__link" href="/contact.html">контакты</a>
+          </nav>
+    
+          <button class="hamburger" type="button" id="navToggle">
+            <span class="hamburger__icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main page -->
+    
+    <!-- Works -->
+    <section class="works section" id="works">
+      <div class="container">
+        <div class="works__header text-center">
+          <h2 class="works__title title">мои работы</h2>
+        </div>
+        <div class="works-slider">
+          <!-- Slider main container -->
+          <div class="works-slider__container">
+            <!-- Additional required wrapper -->
+            <div class="works-slider__wrapper">
+              <!-- Slides -->
+              <div class="works-slider__slide">
+                <a
+                  class="works-slider__photo"
+                  href="https://netvoi.github.io/works/yoga-tour"
+                  target="_blank"
+                >
+                  <picture>
+                    <source
+                      srcset="assets/img/works/yoga-tours.webp"
+                      type="image/webp"
+                    />
+                    <img
+                      class="works-slider__photo-img"
+                      src="assets/img/works/yoga-tours.png"
+                      alt="yoga project"
+                    />
+                  </picture>
+                  <div class="works-slider__photo-mask">
+                    <div class="works-slider__photo-item">
+                      <img src="assets/img/logos/html-logo.svg" alt="html-icon" />
+                    </div>
+                    <div class="works-slider__photo-item">
+                      <img src="assets/img/logos/css-logo.svg" alt="css-icon" />
+                    </div>
+                    <div class="works-slider__photo-item">
+                      <img src="assets/img/logos/js-logo.svg" alt="javascript-icon" />
+                    </div>
+                    <div class="works-slider__photo-item">
+                      <img src="assets/img/logos/sass-logo.svg" alt="scss-icon" />
+                    </div>
+                    <div class="works-slider__photo-item">
+                      <img src="assets/img/logos/gulp-logo.svg" alt="gulp-icon" />
+                    </div>
+                  </div>
+                </a>
+                <div class="works-slider__content">
+                  <h3 class="works-slider__title">Сайт Йога-туры</h3>
+                  <div class="works-slider__description">
+                    <div class="works-slider__text">
+                      <img
+                        src="assets/img/works/time-icon.svg"
+                        alt="time"
+                        class="works-slider__text-img"
+                      />
+                      <div class="works-slider__text-block">
+                        <h4 class="works-slider__text-title">Сроки</h4>
+                        <div class="works-slider__text-paragraph">
+                          5 рабочих дней
+                        </div>
+                      </div>
+                    </div>
+                    <div class="works-slider__text">
+                      <img
+                        src="assets/img/works/feedback-icon.svg"
+                        alt="feedback"
+                        class="works-slider__text-img"
+                      />
+                      <div class="works-slider__text-block">
+                        <h4 class="works-slider__text-title">О работе</h4>
+                        <p class="works-slider__text-paragraph">
+                          Мой первый проект. Сайт был создан с нуля, по макету,
+                          предоставленный компанией "Glo Academy". Данный сайт
+                          полностью адаптивный. То есть сайт можно просматривать на
+                          любом из современных устройств. На сайте присутствует
+                          динамика, а это значит, что любая кнопка, ссылка и прочие
+                          интерактивные элементы реагирует на действия пользователя.
+                          Были оптимизированны все картинки, для более быстрой
+                          загрузки.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="works-slider__slide">
+                <a
+                  class="works-slider__photo"
+                  href="https://netvoi.github.io/works/todolist"
+                  target="_blank"
+                >
+                  <picture>
+                    <source
+                      srcset="assets/img/works/project.webp"
+                      type="jpg/webp"
+                    />
+                    <img
+                      class="works-slider__photo-img"
+                      src="assets/img/works/project.jpg"
+                      alt="project"
+                    />
+                  </picture>
+                  <div class="works-slider__photo-mask">
+                    <div class="works-slider__photo-item">
+                      <img src="assets/img/logos/html-logo.svg" alt="html-icon" />
+                    </div>
+                    <div class="works-slider__photo-item">
+                      <img src="assets/img/logos/css-logo.svg" alt="css-icon" />
+                    </div>
+                    <div class="works-slider__photo-item">
+                      <img src="assets/img/logos/js-logo.svg" alt="js-icon" />
+                    </div>
+                  </div>
+                </a>
+                <div class="works-slider__content">
+                  <h3 class="works-slider__title">TODO list</h3>
+                  <div class="works-slider__description">
+                    <div class="works-slider__text">
+                      <img
+                        src="assets/img/works/time-icon.svg"
+                        alt="time"
+                        class="works-slider__text-img"
+                      />
+                      <div class="works-slider__text-block">
+                        <h4 class="works-slider__text-title">Сроки</h4>
+                        <div class="works-slider__text-paragraph">
+                          1 рабочий день
+                        </div>
+                      </div>
+                    </div>
+                    <div class="works-slider__text">
+                      <img
+                        src="assets/img/works/feedback-icon.svg"
+                        alt="feedback"
+                        class="works-slider__text-img"
+                      />
+                      <div class="works-slider__text-block">
+                        <h4 class="works-slider__text-title">О работе</h4>
+                        <p class="works-slider__text-paragraph">
+                          Мой личный проект. Сайт был создан для себя, чтобы иметь
+                          под рукой TODO list, который полностью меня удовлетворяет.
+                          Проект довольно таки простой. Небольшая html разметка с
+                          использованием css и bootstrap и логика написанная на
+                          чистом js.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="works-slider__slide">
+                <a
+                  class="works-slider__photo"
+                  href="https://tm-front.herokuapp.com/login"
+                  target="_blank"
+                >
+                  <picture>
+                    <source
+                      srcset="assets/img/works/project.webp"
+                      type="jpg/webp"
+                    />
+                    <img
+                      class="works-slider__photo-img"
+                      src="assets/img/works/project.jpg"
+                      alt="project"
+                    />
+                  </picture>
+                  <div class="works-slider__photo-mask">
+                    <div class="works-slider__photo-item">
+                      <img src="assets/img/logos/vue-logo.svg" alt="vue-icon" />
+                    </div>
+                  </div>
+                </a>
+                <div class="works-slider__content">
+                  <h3 class="works-slider__title">Task Manager</h3>
+                  <div class="works-slider__description">
+                    <div class="works-slider__text">
+                      <img
+                        src="assets/img/works/time-icon.svg"
+                        alt="time"
+                        class="works-slider__text-img"
+                      />
+                      <div class="works-slider__text-block">
+                        <h4 class="works-slider__text-title">Сроки</h4>
+                        <div class="works-slider__text-paragraph">
+                          2 месяца
+                        </div>
+                      </div>
+                    </div>
+                    <div class="works-slider__text">
+                      <img
+                        src="assets/img/works/feedback-icon.svg"
+                        alt="feedback"
+                        class="works-slider__text-img"
+                      />
+                      <div class="works-slider__text-block">
+                        <h4 class="works-slider__text-title">О работе</h4>
+                        <p class="works-slider__text-paragraph">
+                          Один из первых проектов на фреймворке Vue.js - Task manager. В данном проекте, мной был разработан фронтенд на Vue.js. В нём есть возможность создавать проект. Внутри проектов реализована возможность создания задачи, которая в свою очередь имеют статус, приоритет и тип. Также внутри проектов есть чаты, в котором пользователи могут обсуждать вопросы. Внутри задачи есть комментарии, где пользователи могут обсужать данную задачу. Присутствует возможность менять статус, приоритет и тип задачи, а также на кого она назначена.
+                          <br><br>
+                          Сайт сделан  полностью динамически на Web сокетах. То есть, при изменении каких-либо данных, одним пользователем, находяющиеся на сайте остальные пользователи сразу увидят изменения, не прибегая к перезагрузке страницы.  
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="works-slider__slide">
+                <a
+                  class="works-slider__photo"
+                  href="https://github.com/netvoi/courseProject-frontend/tree/dev"
+                  target="_blank"
+                >
+                  <picture>
+                    <source
+                      srcset="assets/img/logos/github-logo.svg"
+                      type="svg"
+                    />
+                    <img
+                      class="works-slider__photo-img"
+                      src="assets/img/logos/github-logo.svg"
+                      alt="github-logo"
+                    />
+                  </picture>
+                  <div class="works-slider__photo-mask">
+                    <div class="works-slider__photo-item">
+                      <img src="assets/img/logos/vue-logo.svg" alt="vue-icon" />
+                    </div>
+                    <div class="works-slider__photo-item">
+                      <img src="assets/img/logos/nodejs-logo.svg" alt="node.js-icon" />
+                    </div>
+                  </div>
+                </a>
+                <div class="works-slider__content">
+                  <h3 class="works-slider__title">Libertad</h3>
+                  <div class="works-slider__description">
+                    <div class="works-slider__text">
+                      <img
+                        src="assets/img/works/time-icon.svg"
+                        alt="time"
+                        class="works-slider__text-img"
+                      />
+                      <div class="works-slider__text-block">
+                        <h4 class="works-slider__text-title">Сроки</h4>
+                        <div class="works-slider__text-paragraph">
+                          3 месяца
+                        </div>
+                      </div>
+                    </div>
+                    <div class="works-slider__text">
+                      <img
+                        src="assets/img/works/feedback-icon.svg"
+                        alt="feedback"
+                        class="works-slider__text-img"
+                      />
+                      <div class="works-slider__text-block">
+                        <h4 class="works-slider__text-title">О работе</h4>
+                        <p class="works-slider__text-paragraph">
+                          Мой первый опыт разработки fullstack приложения. В основе данного приложения легла социальная сеть. Социальная сеть позволяет вести учёт просмотренных пользователем сериалов, выставлять оценки, делиться своим мнением, вести диалоги с другими пользователями.
+                          <br><br>
+                          Созданное мной клиент-серверное приложение включает в себя отдельное приложение на frontend, где используется Vue.js, которое получает данные через API сервера на Node.js.
+                          <br><br>
+                          На данном этапе нет возможности просмотра сайта. Но есть возможность посмотреть на сайт с технической стороны, на github.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>          
+            </div>
+    
+            <div class="works-slider__pagination"></div>
+    
+          </div>
+          <!-- /.slider -->
+        </div>
+        <!--/.portfolio  -->
+      </div>
+      <!-- /.container -->
+    </section>
+    <!-- /.works -->
+    
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__social">
+            <a class="footer__link" href="https://vk.com/mars_99" target="_blank">
+              <img class="footer__icon" src="assets/img/social/vk.svg" alt="vk-icon" />
+            </a>
+            <a
+              class="footer__link"
+              href="https://t.me/l1ttlesparrow"
+              target="_blank"
+            >
+              <img
+                class="footer__icon"
+                src="assets/img/social/telegram.svg"
+                alt="telegram-icon"
+              />
+            </a>
+            <a
+              class="footer__link"
+              href="https://www.instagram.com/littlesparrow____/"
+              target="_blank"
+            >
+              <img
+                class="footer__icon"
+                src="assets/img/social/instagram.svg"
+                alt="instagram-icon"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+</div>
+
+<script src="assets/js/app.js"></script>
+
+</body>
+</html>
